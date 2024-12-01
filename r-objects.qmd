@@ -3,7 +3,7 @@ title: "R Objects"
 author: "Sang B. Mendy"
 date: "2024-10-05"
 date-format: "DD-MM-YYYY"
-#description: "This is a sample Quar"
+#description: "This is a "
 title-block-banner: '#053F57'
 format:
   html:
@@ -25,9 +25,188 @@ format:
     reference-location: margin
     citation-location: margin
 editor: visual
+editor_options: 
+  chunk_output_type: console
 ---
 
+# What is a an R object?
+
+One of the first questions encountered when working with data in R is what sort of object should be used to hold collections of data. Thus, an object in R is a fundamental data structure that stores information. As far as R programming language is concern, variables are assign to objects. Essentially, everything in R (variables, data, functions, etc.) is treated as an object. Objects are therefore containers that store data or code and have specific properties like **class** (e.g numeric), **structure** (e.g numbers, text, logical values, etc), and **attributes** (dimensions, names, etc).
+
+# Types of R objects
+
+There are several objects in R. Our focus will be on:
+
+- **vectors**
+- **factors**
+- **list**
+- **data frame**
+- **matrix**
+- **data**
+
+## **vectors**: 
+A vector is one-dimensional collection of the same data types. That means, the elements of a vector *must* have the same *mode* or *data type*.
+
+### How to create a vector in R.
+There are different ways to create a vector in R. Let's go through some of them
+
+### Using `c()` (Cocatenate function)
+The most common way to create a vector is by concatenating elements using `c()`.
+
 ```{r}
-x <- c(1:5)
-x
+vec1 <- c(2, 4, 6, 8) # A numeric vector
+vec2 <- c("two", "four", "six", "eight") # A character vector
+vec3 <- c(FALSE, TRUE, TRUE, FALSE) # A logical vector
 ```
+
+### Using `seq()` **(Sequence Function)**
+
+```{r}
+vec4 <- seq(from = 10, to = 20, by = 2) # A vector of numbers from
+                                        # 10 to 20 with a step size of 2
+
+vec5 <- seq(1,5, length.out = 4) # Return 4 equally spaced numbers from 1 to 5.
+```
+
+### Using `:` **(Colon Operator)**: 
+This a quick way to create a sequence of integers in R.
+
+```{r}
+vec6 <- 1:10 # Sequence from 1 to 10
+vec7 <- 20:10 # Sequence from 20 down to 10
+```
+
+### Using `rep()` (Replicate Function):
+If we want to create a vector that contains an element(s) repeated a number times, then the `rep()` function can be used to do that for us.
+
+```{r}
+vec8 <- rep(0, times = 5) # repeat "0" 5 times
+vec9 <- rep(c(1,2), times = 3) # Repeat the sequence 3 times
+vce10 <- rep(c("a", "b", "c"), each = 2) # repeat each element 2 times
+```
+
+### Using `numeric()`, `integer()`, `character()`, or `logical()`
+
+We can create an empty vector with a specified type and length:
+
+```{r}
+vec11 <- numeric(6) #Numeric vector with 6 elements initialised to 0
+vec12 <-  integer(5) #Integer vector with 5 elements initialised to 0
+vec13 <- character(4) # Character vector with 4 empty strings
+vec14 <- logical(3) # Logical vector with 3 FALSE values
+```
+
+### Vectors From Random Samples or Statistical Distributions
+Vcetors can also be generated from random statistical distributions.
+
+```{r}
+vec15 <- rnorm(5, mean = 0, sd = 1) # Normal Distribution: 5 random numbers
+vec16 <- runif(5, min = 0, max = 8) # Uniform Distribution: 5 random numbers
+vec17 <- sample(11:20, size = 6) # Random sample of numbers from 11 to 20
+```
+
+
+## **Factors**
+
+## **List**
+
+## **Data frame**
+
+## **Matrix**
+
+### Using `matrix()` Function
+The matrix() function is the most direct way to create a matrix.
+
+```{r}
+mat <- matrix(data = 1:6, nrow = 2, ncol = 3)  # 2 rows, 3 columns
+mat <- matrix(1:9, nrow = 3, byrow = TRUE)    # Fill by rows instead of columns
+
+``` 
+
+### Using `cbind()` and `rbind()`
+Combine vectors as rows or columns to form a matrix.
+
+`cbind()`: Binds vectors column-wise.
+`rbind()`: Binds vectors row-wise.
+
+```{r}
+col1 <- c(1, 2, 3)
+col2 <- c(4, 5, 6)
+mat1 <- cbind(col1, col2)  # Combine column-wise
+mat2 <- rbind(col1, col2)  # Combine row-wise
+```
+
+### Converting Vectors to Matrices
+You can convert a vector into a matrix by setting its dimensions using the dim() function.
+
+```{r}
+vec <- 1:9
+dim(vec) <- c(3, 3)  # Reshape vector into a 3x3 matrix
+```
+
+### Using `array()`
+An array is a generalized form of a matrix (multi-dimensional). You can create a matrix as a special case of an array.
+
+```{r}
+mat <- array(data = 1:6, dim = c(2, 3))  # Creates a 2x3 matrix
+``` 
+
+### Using `diag()`
+Creates a diagonal matrix where all off-diagonal elements are 0.
+
+```{r}
+mat <- diag(3)           # 3x3 identity matrix
+mat <- diag(c(1, 2, 3))  # Custom diagonal values
+```
+
+### Combining Scalars or Smaller Matrices
+You can build a matrix by combining scalars or smaller matrices using `rbind()` or `cbind()`.
+
+```{r}
+row1 <- c(1, 2, 3)
+row2 <- c(4, 5, 6)
+row3 <- c(7, 8, 9)
+mat <- rbind(row1, row2, row3)  # Combine rows
+```
+
+### Using Random Number Generators
+Create a matrix filled with random numbers.
+
+```{r}
+mat <- matrix(runif(9), nrow = 3)  # 3x3 matrix with random numbers (uniform distribution)
+mat <- matrix(rnorm(9), nrow = 3)  # 3x3 matrix with random numbers (normal distribution)
+```
+
+### From Data Frames
+Convert a data frame to a matrix using as.matrix().
+
+```{r}
+df <- data.frame(a = 1:3, b = 4:6)
+mat <- as.matrix(df)  # Converts the data frame to a matrix
+```
+
+### Using Nested Loops
+Construct a matrix manually with a loop.
+
+
+```{r}
+mat <- matrix(0, nrow = 2, ncol = 3)  # Initialize a 2x3 matrix with zeros
+for (i in 1:2) {
+  for (j in 1:3) {
+    mat[i, j] <- i + j  # Populate the matrix
+  }
+}
+```
+
+### Using `outer()` Function
+Generates a matrix by applying a function to all pairwise combinations of elements from two vectors.
+
+```{r}
+vec1 <- 1:3
+vec2 <- 4:6
+mat <- outer(vec1, vec2, FUN = "+")  # Adds elements of vec1 and vec2
+```
+
+## **Array**
+
+## **Special Objects**: `NULL` and `NA`

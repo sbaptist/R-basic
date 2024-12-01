@@ -113,7 +113,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   
   </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
-  
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#what-is-a-an-r-object" id="toc-what-is-a-an-r-object" class="nav-link active" data-scroll-target="#what-is-a-an-r-object"><span class="header-section-number">1</span> What is a an R object?</a></li>
+  <li><a href="#types-of-r-objects" id="toc-types-of-r-objects" class="nav-link" data-scroll-target="#types-of-r-objects"><span class="header-section-number">2</span> Types of R objects</a>
+  <ul class="collapse">
+  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors"><span class="header-section-number">2.1</span> <strong>vectors</strong>:</a>
+  <ul class="collapse">
+  <li><a href="#how-to-create-a-vector-in-r." id="toc-how-to-create-a-vector-in-r." class="nav-link" data-scroll-target="#how-to-create-a-vector-in-r."><span class="header-section-number">2.1.1</span> How to create a vector in R.</a></li>
+  <li><a href="#using-c-cocatenate-function" id="toc-using-c-cocatenate-function" class="nav-link" data-scroll-target="#using-c-cocatenate-function"><span class="header-section-number">2.1.2</span> Using <code>c()</code> (Cocatenate function)</a></li>
+  <li><a href="#using-seq-sequence-function" id="toc-using-seq-sequence-function" class="nav-link" data-scroll-target="#using-seq-sequence-function"><span class="header-section-number">2.1.3</span> Using <code>seq()</code> <strong>(Sequence Function)</strong></a></li>
+  <li><a href="#using-colon-operator" id="toc-using-colon-operator" class="nav-link" data-scroll-target="#using-colon-operator"><span class="header-section-number">2.1.4</span> Using <code>:</code> <strong>(Colon Operator)</strong>:</a></li>
+  <li><a href="#using-rep-replicate-function" id="toc-using-rep-replicate-function" class="nav-link" data-scroll-target="#using-rep-replicate-function"><span class="header-section-number">2.1.5</span> Using <code>rep()</code> (Replicate Function):</a></li>
+  <li><a href="#using-numeric-integer-character-or-logical" id="toc-using-numeric-integer-character-or-logical" class="nav-link" data-scroll-target="#using-numeric-integer-character-or-logical"><span class="header-section-number">2.1.6</span> Using <code>numeric()</code>, <code>integer()</code>, <code>character()</code>, or <code>logical()</code></a></li>
+  <li><a href="#vectors-from-random-samples-or-statistical-distributions" id="toc-vectors-from-random-samples-or-statistical-distributions" class="nav-link" data-scroll-target="#vectors-from-random-samples-or-statistical-distributions"><span class="header-section-number">2.1.7</span> Vectors From Random Samples or Statistical Distributions</a></li>
+  </ul></li>
+  <li><a href="#factors" id="toc-factors" class="nav-link" data-scroll-target="#factors"><span class="header-section-number">2.2</span> <strong>Factors</strong></a></li>
+  <li><a href="#list" id="toc-list" class="nav-link" data-scroll-target="#list"><span class="header-section-number">2.3</span> <strong>List</strong></a></li>
+  <li><a href="#data-frame" id="toc-data-frame" class="nav-link" data-scroll-target="#data-frame"><span class="header-section-number">2.4</span> <strong>Data frame</strong></a></li>
+  <li><a href="#matrix" id="toc-matrix" class="nav-link" data-scroll-target="#matrix"><span class="header-section-number">2.5</span> <strong>Matrix</strong></a>
+  <ul class="collapse">
+  <li><a href="#using-matrix-function" id="toc-using-matrix-function" class="nav-link" data-scroll-target="#using-matrix-function"><span class="header-section-number">2.5.1</span> Using <code>matrix()</code> Function</a></li>
+  <li><a href="#using-cbind-and-rbind" id="toc-using-cbind-and-rbind" class="nav-link" data-scroll-target="#using-cbind-and-rbind"><span class="header-section-number">2.5.2</span> Using <code>cbind()</code> and <code>rbind()</code></a></li>
+  <li><a href="#converting-vectors-to-matrices" id="toc-converting-vectors-to-matrices" class="nav-link" data-scroll-target="#converting-vectors-to-matrices"><span class="header-section-number">2.5.3</span> Converting Vectors to Matrices</a></li>
+  <li><a href="#using-array" id="toc-using-array" class="nav-link" data-scroll-target="#using-array"><span class="header-section-number">2.5.4</span> Using <code>array()</code></a></li>
+  <li><a href="#using-diag" id="toc-using-diag" class="nav-link" data-scroll-target="#using-diag"><span class="header-section-number">2.5.5</span> Using <code>diag()</code></a></li>
+  <li><a href="#combining-scalars-or-smaller-matrices" id="toc-combining-scalars-or-smaller-matrices" class="nav-link" data-scroll-target="#combining-scalars-or-smaller-matrices"><span class="header-section-number">2.5.6</span> Combining Scalars or Smaller Matrices</a></li>
+  <li><a href="#using-random-number-generators" id="toc-using-random-number-generators" class="nav-link" data-scroll-target="#using-random-number-generators"><span class="header-section-number">2.5.7</span> Using Random Number Generators</a></li>
+  <li><a href="#from-data-frames" id="toc-from-data-frames" class="nav-link" data-scroll-target="#from-data-frames"><span class="header-section-number">2.5.8</span> From Data Frames</a></li>
+  <li><a href="#using-nested-loops" id="toc-using-nested-loops" class="nav-link" data-scroll-target="#using-nested-loops"><span class="header-section-number">2.5.9</span> Using Nested Loops</a></li>
+  <li><a href="#using-outer-function" id="toc-using-outer-function" class="nav-link" data-scroll-target="#using-outer-function"><span class="header-section-number">2.5.10</span> Using <code>outer()</code> Function</a></li>
+  </ul></li>
+  <li><a href="#array" id="toc-array" class="nav-link" data-scroll-target="#array"><span class="header-section-number">2.6</span> <strong>Array</strong></a></li>
+  <li><a href="#special-objects-null-and-na" id="toc-special-objects-null-and-na" class="nav-link" data-scroll-target="#special-objects-null-and-na"><span class="header-section-number">2.7</span> <strong>Special Objects</strong>: <code>NULL</code> and <code>NA</code></a></li>
+  </ul></li>
+  </ul>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
 </div>
@@ -122,13 +159,191 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
+<section id="what-is-a-an-r-object" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> What is a an R object?</h1>
+<p>One of the first questions encountered when working with data in R is what sort of object should be used to hold collections of data. Thus, an object in R is a fundamental data structure that stores information. As far as R programming language is concern, variables are assign to objects. Essentially, everything in R (variables, data, functions, etc.) is treated as an object. Objects are therefore containers that store data or code and have specific properties like <strong>class</strong> (e.g numeric), <strong>structure</strong> (e.g numbers, text, logical values, etc), and <strong>attributes</strong> (dimensions, names, etc).</p>
+</section>
+<section id="types-of-r-objects" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Types of R objects</h1>
+<p>There are several objects in R. Our focus will be on:</p>
+<ul>
+<li><strong>vectors</strong></li>
+<li><strong>factors</strong></li>
+<li><strong>list</strong></li>
+<li><strong>data frame</strong></li>
+<li><strong>matrix</strong></li>
+<li><strong>data</strong></li>
+</ul>
+<section id="vectors" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="vectors"><span class="header-section-number">2.1</span> <strong>vectors</strong>:</h2>
+<p>A vector is one-dimensional collection of the same data types. That means, the elements of a vector <em>must</em> have the same <em>mode</em> or <em>data type</em>.</p>
+<section id="how-to-create-a-vector-in-r." class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="how-to-create-a-vector-in-r."><span class="header-section-number">2.1.1</span> How to create a vector in R.</h3>
+<p>There are different ways to create a vector in R. Let’s go through some of them</p>
+</section>
+<section id="using-c-cocatenate-function" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="using-c-cocatenate-function"><span class="header-section-number">2.1.2</span> Using <code>c()</code> (Cocatenate function)</h3>
+<p>The most common way to create a vector is by concatenating elements using <code>c()</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>)</span>
-<span id="cb1-2"><a href="#cb1-2"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1 2 3 4 5</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>vec1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>) <span class="co"># A numeric vector</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>vec2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"two"</span>, <span class="st">"four"</span>, <span class="st">"six"</span>, <span class="st">"eight"</span>) <span class="co"># A character vector</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>vec3 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>) <span class="co"># A logical vector</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="using-seq-sequence-function" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="using-seq-sequence-function"><span class="header-section-number">2.1.3</span> Using <code>seq()</code> <strong>(Sequence Function)</strong></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>vec4 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">10</span>, <span class="at">to =</span> <span class="dv">20</span>, <span class="at">by =</span> <span class="dv">2</span>) <span class="co"># A vector of numbers from</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>                                        <span class="co"># 10 to 20 with a step size of 2</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a>vec5 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">5</span>, <span class="at">length.out =</span> <span class="dv">4</span>) <span class="co"># Return 4 equally spaced numbers from 1 to 5.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="using-colon-operator" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="using-colon-operator"><span class="header-section-number">2.1.4</span> Using <code>:</code> <strong>(Colon Operator)</strong>:</h3>
+<p>This a quick way to create a sequence of integers in R.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>vec6 <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># Sequence from 1 to 10</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>vec7 <span class="ot">&lt;-</span> <span class="dv">20</span><span class="sc">:</span><span class="dv">10</span> <span class="co"># Sequence from 20 down to 10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="using-rep-replicate-function" class="level3" data-number="2.1.5">
+<h3 data-number="2.1.5" class="anchored" data-anchor-id="using-rep-replicate-function"><span class="header-section-number">2.1.5</span> Using <code>rep()</code> (Replicate Function):</h3>
+<p>If we want to create a vector that contains an element(s) repeated a number times, then the <code>rep()</code> function can be used to do that for us.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>vec8 <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="dv">0</span>, <span class="at">times =</span> <span class="dv">5</span>) <span class="co"># repeat "0" 5 times</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>vec9 <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="at">times =</span> <span class="dv">3</span>) <span class="co"># Repeat the sequence 3 times</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>vce10 <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>), <span class="at">each =</span> <span class="dv">2</span>) <span class="co"># repeat each element 2 times</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="using-numeric-integer-character-or-logical" class="level3" data-number="2.1.6">
+<h3 data-number="2.1.6" class="anchored" data-anchor-id="using-numeric-integer-character-or-logical"><span class="header-section-number">2.1.6</span> Using <code>numeric()</code>, <code>integer()</code>, <code>character()</code>, or <code>logical()</code></h3>
+<p>We can create an empty vector with a specified type and length:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>vec11 <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">6</span>) <span class="co">#Numeric vector with 6 elements initialised to 0</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>vec12 <span class="ot">&lt;-</span>  <span class="fu">integer</span>(<span class="dv">5</span>) <span class="co">#Integer vector with 5 elements initialised to 0</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>vec13 <span class="ot">&lt;-</span> <span class="fu">character</span>(<span class="dv">4</span>) <span class="co"># Character vector with 4 empty strings</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>vec14 <span class="ot">&lt;-</span> <span class="fu">logical</span>(<span class="dv">3</span>) <span class="co"># Logical vector with 3 FALSE values</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="vectors-from-random-samples-or-statistical-distributions" class="level3" data-number="2.1.7">
+<h3 data-number="2.1.7" class="anchored" data-anchor-id="vectors-from-random-samples-or-statistical-distributions"><span class="header-section-number">2.1.7</span> Vectors From Random Samples or Statistical Distributions</h3>
+<p>Vcetors can also be generated from random statistical distributions.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>vec15 <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">5</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>) <span class="co"># Normal Distribution: 5 random numbers</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>vec16 <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">5</span>, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">8</span>) <span class="co"># Uniform Distribution: 5 random numbers</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>vec17 <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">11</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">size =</span> <span class="dv">6</span>) <span class="co"># Random sample of numbers from 11 to 20</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="factors" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="factors"><span class="header-section-number">2.2</span> <strong>Factors</strong></h2>
+</section>
+<section id="list" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="list"><span class="header-section-number">2.3</span> <strong>List</strong></h2>
+</section>
+<section id="data-frame" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="data-frame"><span class="header-section-number">2.4</span> <strong>Data frame</strong></h2>
+</section>
+<section id="matrix" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="matrix"><span class="header-section-number">2.5</span> <strong>Matrix</strong></h2>
+<section id="using-matrix-function" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="using-matrix-function"><span class="header-section-number">2.5.1</span> Using <code>matrix()</code> Function</h3>
+<p>The matrix() function is the most direct way to create a matrix.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>mat <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">3</span>)  <span class="co"># 2 rows, 3 columns</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a>mat <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>, <span class="at">nrow =</span> <span class="dv">3</span>, <span class="at">byrow =</span> <span class="cn">TRUE</span>)    <span class="co"># Fill by rows instead of columns</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="using-cbind-and-rbind" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="using-cbind-and-rbind"><span class="header-section-number">2.5.2</span> Using <code>cbind()</code> and <code>rbind()</code></h3>
+<p>Combine vectors as rows or columns to form a matrix.</p>
+<p><code>cbind()</code>: Binds vectors column-wise. <code>rbind()</code>: Binds vectors row-wise.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>col1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb8-2"><a href="#cb8-2"></a>col2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>)</span>
+<span id="cb8-3"><a href="#cb8-3"></a>mat1 <span class="ot">&lt;-</span> <span class="fu">cbind</span>(col1, col2)  <span class="co"># Combine column-wise</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a>mat2 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(col1, col2)  <span class="co"># Combine row-wise</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="converting-vectors-to-matrices" class="level3" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="converting-vectors-to-matrices"><span class="header-section-number">2.5.3</span> Converting Vectors to Matrices</h3>
+<p>You can convert a vector into a matrix by setting its dimensions using the dim() function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>vec <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="fu">dim</span>(vec) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">3</span>)  <span class="co"># Reshape vector into a 3x3 matrix</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="using-array" class="level3" data-number="2.5.4">
+<h3 data-number="2.5.4" class="anchored" data-anchor-id="using-array"><span class="header-section-number">2.5.4</span> Using <code>array()</code></h3>
+<p>An array is a generalized form of a matrix (multi-dimensional). You can create a matrix as a special case of an array.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>mat <span class="ot">&lt;-</span> <span class="fu">array</span>(<span class="at">data =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">dim =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>))  <span class="co"># Creates a 2x3 matrix</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="using-diag" class="level3" data-number="2.5.5">
+<h3 data-number="2.5.5" class="anchored" data-anchor-id="using-diag"><span class="header-section-number">2.5.5</span> Using <code>diag()</code></h3>
+<p>Creates a diagonal matrix where all off-diagonal elements are 0.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>mat <span class="ot">&lt;-</span> <span class="fu">diag</span>(<span class="dv">3</span>)           <span class="co"># 3x3 identity matrix</span></span>
+<span id="cb11-2"><a href="#cb11-2"></a>mat <span class="ot">&lt;-</span> <span class="fu">diag</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>))  <span class="co"># Custom diagonal values</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="combining-scalars-or-smaller-matrices" class="level3" data-number="2.5.6">
+<h3 data-number="2.5.6" class="anchored" data-anchor-id="combining-scalars-or-smaller-matrices"><span class="header-section-number">2.5.6</span> Combining Scalars or Smaller Matrices</h3>
+<p>You can build a matrix by combining scalars or smaller matrices using <code>rbind()</code> or <code>cbind()</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>row1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb12-2"><a href="#cb12-2"></a>row2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>)</span>
+<span id="cb12-3"><a href="#cb12-3"></a>row3 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>)</span>
+<span id="cb12-4"><a href="#cb12-4"></a>mat <span class="ot">&lt;-</span> <span class="fu">rbind</span>(row1, row2, row3)  <span class="co"># Combine rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="using-random-number-generators" class="level3" data-number="2.5.7">
+<h3 data-number="2.5.7" class="anchored" data-anchor-id="using-random-number-generators"><span class="header-section-number">2.5.7</span> Using Random Number Generators</h3>
+<p>Create a matrix filled with random numbers.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>mat <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">runif</span>(<span class="dv">9</span>), <span class="at">nrow =</span> <span class="dv">3</span>)  <span class="co"># 3x3 matrix with random numbers (uniform distribution)</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>mat <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">rnorm</span>(<span class="dv">9</span>), <span class="at">nrow =</span> <span class="dv">3</span>)  <span class="co"># 3x3 matrix with random numbers (normal distribution)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="from-data-frames" class="level3" data-number="2.5.8">
+<h3 data-number="2.5.8" class="anchored" data-anchor-id="from-data-frames"><span class="header-section-number">2.5.8</span> From Data Frames</h3>
+<p>Convert a data frame to a matrix using as.matrix().</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">a =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">b =</span> <span class="dv">4</span><span class="sc">:</span><span class="dv">6</span>)</span>
+<span id="cb14-2"><a href="#cb14-2"></a>mat <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>(df)  <span class="co"># Converts the data frame to a matrix</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="using-nested-loops" class="level3" data-number="2.5.9">
+<h3 data-number="2.5.9" class="anchored" data-anchor-id="using-nested-loops"><span class="header-section-number">2.5.9</span> Using Nested Loops</h3>
+<p>Construct a matrix manually with a loop.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>mat <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="dv">0</span>, <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">3</span>)  <span class="co"># Initialize a 2x3 matrix with zeros</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>) {</span>
+<span id="cb15-3"><a href="#cb15-3"></a>  <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>) {</span>
+<span id="cb15-4"><a href="#cb15-4"></a>    mat[i, j] <span class="ot">&lt;-</span> i <span class="sc">+</span> j  <span class="co"># Populate the matrix</span></span>
+<span id="cb15-5"><a href="#cb15-5"></a>  }</span>
+<span id="cb15-6"><a href="#cb15-6"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="using-outer-function" class="level3" data-number="2.5.10">
+<h3 data-number="2.5.10" class="anchored" data-anchor-id="using-outer-function"><span class="header-section-number">2.5.10</span> Using <code>outer()</code> Function</h3>
+<p>Generates a matrix by applying a function to all pairwise combinations of elements from two vectors.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>vec1 <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a>vec2 <span class="ot">&lt;-</span> <span class="dv">4</span><span class="sc">:</span><span class="dv">6</span></span>
+<span id="cb16-3"><a href="#cb16-3"></a>mat <span class="ot">&lt;-</span> <span class="fu">outer</span>(vec1, vec2, <span class="at">FUN =</span> <span class="st">"+"</span>)  <span class="co"># Adds elements of vec1 and vec2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="array" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="array"><span class="header-section-number">2.6</span> <strong>Array</strong></h2>
+</section>
+<section id="special-objects-null-and-na" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="special-objects-null-and-na"><span class="header-section-number">2.7</span> <strong>Special Objects</strong>: <code>NULL</code> and <code>NA</code></h2>
+</section>
+</section>
 
 </main>
 <!-- /main column -->
