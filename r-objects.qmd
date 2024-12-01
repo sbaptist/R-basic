@@ -3,7 +3,7 @@ title: "R Objects"
 author: "Sang B. Mendy"
 date: "2024-10-05"
 date-format: "DD-MM-YYYY"
-#description: "This is a "
+#description: "A look though th various objects types in R and how to create each of them"
 title-block-banner: '#053F57'
 format:
   html:
